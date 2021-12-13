@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B22F988E-57C2-4D64-93AA-6A6E420FEADE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LunaTokenGenV2</RootNamespace>
+    <AssemblyName>LunaTokenGenV2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>LunaTokenGenV2.ico</ApplicationIcon>
+    <StartupObject>LunaTokenGenV2.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BrotliSharpLib">
+      <HintPath>..\BrotliSharpLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Leaf.xNet">
+      <HintPath>..\Leaf.xNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.UI">
+      <HintPath>..\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="websocket-sharp-customheaders">
+      <HintPath>..\websocket-sharp-customheaders.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-{B51C200F-69C2-4FCB-B180-EC5883DE474F}.cs" />
+    <Compile Include="api.cs" />
+    <Compile Include="Attribute0.cs" />
+    <Compile Include="Auth\GG_Winform_Example\Main\DiscordInvite.cs" />
+    <Compile Include="Auth\GG_Winform_Example\Utils\Utils.cs" />
+    <Compile Include="AutoReconnectData.cs" />
+    <Compile Include="Class0.cs" />
+    <Compile Include="DiscordClient.cs" />
+    <Compile Include="DiscordInvite.cs" />
+    <Compile Include="encryption.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILLicenseModule.cs" />
+    <Compile Include="json_wrapper.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LunaTokenCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LunaTokenCreator.Designer.cs">
+      <DependentUpon>LunaTokenCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModernRegistering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModernRegistering.Designer.cs">
+      <DependentUpon>ModernRegistering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Request.cs" />
+    <Compile Include="Settings_Tab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_Tab.Designer.cs">
+      <DependentUpon>Settings_Tab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TokenSettings.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Webhook.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="8a7cb36d-0e15-41d8-b7c5-670c98ad3f0b" />
+    <EmbeddedResource Include="Form1.resources" />
+    <EmbeddedResource Include="g.resources" />
+    <EmbeddedResource Include="Login.resources" />
+    <EmbeddedResource Include="LunaTokenCreator.resources" />
+    <EmbeddedResource Include="ModernRegistering.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+    <EmbeddedResource Include="Settings_Tab.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
