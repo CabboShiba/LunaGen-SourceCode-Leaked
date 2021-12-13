@@ -51,16 +51,16 @@ namespace LunaTokenGenV2
 		}
 
 		// Token: 0x04000121 RID: 289
-		private static string name = "SolarCleaner";
+		private static string name = "Luna Token GenV2";
 
 		// Token: 0x04000122 RID: 290
-		private static string ownerid = "OZpg7HtQaJ";
+		private static string ownerid = "ug6Y9vPFGT";
 
 		// Token: 0x04000123 RID: 291
-		private static string secret = "8eaf7509010434dae460edd74fcb88349e5d69b962f8b618d0097ecc9b268f3a";
+		private static string secret = "1c4ba43d21c604c3d54a8b96211402e3a7b08e91dfaac9c3ee8b6d4dcd519757";
 
 		// Token: 0x04000124 RID: 292
-		private static string version = "1";
+		private static string version = "1.o";
 
 		// Token: 0x04000125 RID: 293
 		public static api Lunaauth = new api(Login.name, Login.ownerid, Login.secret, Login.version);
