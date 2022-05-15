@@ -10,8 +10,8 @@ Do you want to contact me?
 Discord: FreeCabbo6#8203
 Telegram: @cabboshiba
 
-My video:
-https://youtu.be/3viALdxMpOw
+
+
 
 Lizard video:
 https://youtu.be/4anmFmhFMcc
